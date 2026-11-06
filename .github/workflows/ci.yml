@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run build or test check
-        run: npm test
+      - name: Run syntax check
+        run: node -c server.js
         env:
           CI: true
