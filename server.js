@@ -7,7 +7,7 @@ const os = require('os');
 const app = express();
 const PORT = 3000;
 
-// Uploads Folder එක සාදන්න
+// Create Upload Folder
 const uploadDir = path.join(__dirname, 'uploads');
 if (!fs.existsSync(uploadDir)) {
     fs.mkdirSync(uploadDir);
